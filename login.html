@@ -24,8 +24,8 @@
             let users = JSON.parse(localStorage.getItem('users')) || [];
             const user = users.find(user => user.username === username && user.password === password);
             if (user) {
-                alert('Login successful! Redirecting to homepage...');
-                window.location.href = './assets/lib/index.html';
+                alert('Login successful! Redirecting to home...');
+                window.location.href = '/assets/lib/index.html';
             } else {
                 alert('Invalid username or password. Please try again.');
             }
